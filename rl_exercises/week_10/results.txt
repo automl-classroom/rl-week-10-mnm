@@ -1,0 +1,6 @@
+lr=0.0001, ed=0.99, mean_reward=9.56, std=0.27
+lr=0.0001, ed=0.995, mean_reward=9.56, std=0.27
+lr=0.0005, ed=0.99, mean_reward=21.26, std=14.74
+lr=0.0005, ed=0.995, mean_reward=21.26, std=14.74
+lr=0.001, ed=0.99, mean_reward=19.46, std=12.51
+lr=0.001, ed=0.995, mean_reward=19.46, std=12.51

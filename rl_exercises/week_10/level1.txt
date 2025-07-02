@@ -1,0 +1,21 @@
+We want to generalize our DQN Agent from week 4 to generalize 
+to different seeds. Therefore we train the agent with multiple 
+learning rates and epsilon decays and train those on 4 different seeds.
+As a measure per agent per seed we take the average discounted reward over the last 10 Episodes.
+And after that we calculate per HP setting the mean and the std of the agents.
+High mean means good performing agents, and low std means low varaince Therefore
+better gneralization.
+
+
+Results:
+'lr=0.0001, ed=0.99, mean_reward=9.56, std=0.27', 
+'lr=0.0001, ed=0.995, mean_reward=9.56, std=0.27', 
+'lr=0.0005, ed=0.99, mean_reward=21.26, std=14.74', 
+'lr=0.0005, ed=0.995, mean_reward=21.26, std=14.74', 
+'lr=0.001, ed=0.99, mean_reward=19.46, std=12.51', 
+'lr=0.001, ed=0.995, mean_reward=19.46, std=12.51'
+
+We see that a learning rate of 0.0001 gives us the best 
+generalization with std=0.27
+But what we also see is that the agents under those hyperparameters
+do not perform as well as the others with a mean of only 9.56
